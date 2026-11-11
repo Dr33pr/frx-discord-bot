@@ -1,0 +1,19 @@
+{
+  "name": "frx-discord-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Base de bot de Discord frx con comandos slash",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy-commands": "node deploy-commands.js",
+    "check": "node --check src/index.js && node --check src/commands.js && node --check deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^16.6.1"
+  }
+}
