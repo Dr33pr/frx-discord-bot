@@ -22,20 +22,14 @@ Base en Node.js y discord.js con comandos slash. La reproducción de música no 
    No compartas ni publiques el archivo `.env`.
 
 4. Invita el bot desde **OAuth2 > URL Generator**, seleccionando los scopes `bot` y `applications.commands`. Para esta base bastan los permisos `View Channels`, `Send Messages` y `Use Application Commands`.
-5. Instala dependencias y registra los comandos en el servidor:
+5. Instala las dependencias e inicia el bot:
 
    ```sh
    npm install
-   npm run deploy-commands
-   ```
-
-6. Inicia el bot:
-
-   ```sh
    npm start
    ```
 
-Usa `/ping`, `/ayuda` y `/play consulta:<texto o enlace>` en el servidor. Los comandos se registran para ese servidor de forma que aparezcan sin esperar la propagación global.
+Al iniciar, el bot registra automáticamente `/ping`, `/ayuda` y `/play consulta:<texto o enlace>` en el servidor configurado. También puedes registrar los comandos manualmente con `npm run deploy-commands`.
 
 ## Música
 
